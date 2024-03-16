@@ -1,13 +1,11 @@
-import { Button } from '@/components/ui/button'
+import PageContainer from './components/PageContainer'
 
-function App() {
-
+export default function App() {
   return (
-    <>
-      <h1 className='bg-blue-500'>Olá mundo!</h1>
-      <Button variant="destructive">Olá</Button>
-    </>
+    <PageContainer>
+      {Array(50).fill(0).map((_, i) => (
+        <p key={i}>Olá mundo!</p>
+      ))}
+    </PageContainer>
   )
 }
-
-export default App
