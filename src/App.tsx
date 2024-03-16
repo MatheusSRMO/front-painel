@@ -1,12 +1,13 @@
-import React from 'react';
-import { Button } from './components/ui/button';
-// import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/button'
 
-export default function App() {
+function App() {
+
   return (
-    <h1 className="text-3xl font-bold underline bg-slate-400">
-      Hello world!
-      <Button>Olá mundo</Button>
-    </h1>
+    <>
+      <h1 className='bg-blue-500'>Olá mundo!</h1>
+      <Button variant="destructive">Olá</Button>
+    </>
   )
 }
+
+export default App
